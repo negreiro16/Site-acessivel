@@ -3,6 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --alto-contrste-fundo: #000000;
+    --alto-contraste-texo: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -161,3 +164,43 @@ flex-direction: column;
 .apresenta-lista{
     display: none;
 }
+
+.alto-contraste {
+    background-color: var(--alto-contrste-fundo);
+    color: var(--alto-contraste-texo)
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contrste-fundo);
+    color: var(--alto-contraste-texo);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+<section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+        <h2 class="text-center pt-5">Galeria</h2>
+        <div class="container p-3 mt-3 fundo-galeria">
+
+            <!-- Código omitido --> 
+
+         </div>
+</section>
